@@ -5,13 +5,14 @@ var path = require("path");
 var options = fs.readFileSync("./freeSS.json", 'utf8');
 	options = JSON.parse(options);
 
-var config = fs.readFileSync(options.config_file, 'utf8');
+var config = path.join(process.env.HOMEPATH ,options.config_file);
+    config = fs.readFileSync(config, 'utf8');
 	config = JSON.parse(config);
-var configs = path.join(process.env.HOMEPATH ,config.configs);
+var configs = config.configs;
 
 jsdom.env(
   "http://www.ishadowsocks.com/",
-  ["./jquery-v1.11.1.min"],
+  [path.join(process.cwd(), "jquery-v1.11.1.min.js")],
   function (err, window) {
     var data = window.$("#free .row:nth-child(2)").children();
     for (var i = 0; i < data.length; i++){
