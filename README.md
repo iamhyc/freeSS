@@ -5,9 +5,11 @@ Free server configuration now only with '**ishadowsocks.com**'.
 **Nodejs** environment required.**Windows** environment required.
 
 ##Steps
+0. **git clone** this repository or **download and unzip** it
+
 1.  download the shadowsock-gui(qt) version, and move it to your HOME directory
 
-2. cd in the directory, and then execute "**npm install**"
+2. cd in the repository directory, and then execute "**npm install**"
 
 3. Then, execute "**node config.js**" to generate the "**Timeup.bat**" file.
 
