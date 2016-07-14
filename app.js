@@ -5,8 +5,8 @@ var path = require("path");
 var options = fs.readFileSync("./freeSS.json", 'utf8');
 	options = JSON.parse(options);
 
-var config = path.join(process.env.HOMEPATH ,options.config_file);
-    config = fs.readFileSync(config, 'utf8');
+var config_file = path.join(process.env.HOMEPATH ,options.config_file);
+var config = fs.readFileSync(config_file, 'utf8');
 	config = JSON.parse(config);
 var configs = config.configs;
 
@@ -28,7 +28,7 @@ jsdom.env(
     }
     config.configs = configs;
     config = JSON.stringify(config);
-    fs.writeFileSync(options.config_file, config, 'utf8');
+    fs.writeFileSync(config_file, config, 'utf8');
     console.log("Config Updated!");
   }
 );
