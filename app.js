@@ -1,16 +1,17 @@
 var jsdom = require("jsdom");
 var fs = require("fs");
+var path = require("path");
 
-var options = fs.readFileSync("C:\\Users\\iamhy_000\\freeSS\\freeSS.json", 'utf8');
+var options = fs.readFileSync("./freeSS.json", 'utf8');
 	options = JSON.parse(options);
 
 var config = fs.readFileSync(options.config_file, 'utf8');
 	config = JSON.parse(config);
-var configs = config.configs;
+var configs = path.join(process.env.HOMEPATH ,config.configs);
 
 jsdom.env(
   "http://www.ishadowsocks.com/",
-  ["http://code.jquery.com/jquery-latest.min.js"],
+  ["./jquery-v1.11.1.min"],
   function (err, window) {
     var data = window.$("#free .row:nth-child(2)").children();
     for (var i = 0; i < data.length; i++){
