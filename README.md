@@ -16,3 +16,7 @@ Free server configuration now only with '**ishadowsocks.com**'.
 4. Move the "Timeup.bat" to the **common-use** place, and double-click on it, when your key is out of date, or you need to re-config your shadowsocks server.
 
 [Recomended: Enable the "**Load Balancing**" Mode]
+
+##Additions
+
+1. Your own server configuration should be written in the config file at the root of the directory in **json** format(reffering **users.json**), and remember to suuit the file name in **freeSS.json**.
