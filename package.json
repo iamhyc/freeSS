@@ -1,7 +1,7 @@
 {
-  "name": "freeSSS",
-  "version": "0.1.0",
-  "dependencies": {
-    "jsdom": "*"
-  }
+	"name": "freeSS",
+	"version": "0.1.0",
+	"dependencies": {
+		"jsdom": "*"
+	}
 }

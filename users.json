@@ -1,0 +1,17 @@
+{
+	"server_list":
+	[
+		{
+			"address":"localhost",
+			"port":"3001",
+			"password":"nopassword",
+			"encryption":"AES-256-CFB"
+		},
+		{
+			"address":"localhost",
+			"port":"3002",
+			"password":"nopassword",
+			"encryption":"AES-256-CFB"
+		}
+	]
+}
