@@ -1,10 +1,11 @@
 var path = require("path");
 var jsdom = require("jsdom");
-var jquery_path = path.join(process.cwd(), "jquery-v1.11.1.min.js");
+var jquery_path = "http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js";
 
 var process = function(para, configs, callback) {
-
-	jsdom.env(website.url, [jquery_path], function(err, window) {
+	
+	jsdom.env(para.url, [jquery_path], function(err, window) {
+		var $ = window.$;
 		for(var i = 0; i < para.number; i++) {
 			var tmp = {};
 			var data_section = para.section + ":eq("+i+") ";

@@ -2,7 +2,8 @@
 var fs = require("fs");
 
 var process = function(uri, configs, callback) {
-	var server_list = require(uri);
+	var server_list = require(uri).server_list;
+
 	server_list.forEach(function(server){
 		var tmp = {};
 		tmp.server = server.address;

@@ -9,19 +9,23 @@
 
 			"section": "#free .row:nth-child(2) div",
 			"address": {
-				"section":"h4:eq(0)",//X服务器地址:*******
+				"_comment":"X服务器地址:#######",
+				"section":"h4:eq(0)",
 				"slice":"7"
 				},
 			"port": {
-				"section":"h4:eq(1)",//端口:****
+				"_comment":"端口:####",
+				"section":"h4:eq(1)",
 				"slice":"3"
 				},
 			"password": {
-				"section":"h4:eq(2)",//X密码:******
+				"_comment":"X密码:######",
+				"section":"h4:eq(2)",
 				"slice":"4"
 				},
 			"encryption": {
-				"section":"h4:eq(3)",//加密方式:AES-256-CFB
+				"_comment":"加密方式:AES-256-CFB",
+				"section":"h4:eq(3)",
 				"slice":"5"
 				}
 		},

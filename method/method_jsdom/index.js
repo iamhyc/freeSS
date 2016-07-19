@@ -1,1 +1,2 @@
-exports = require("./method_jsdom.js");
+
+module.exports = require("./method_jsdom.js");

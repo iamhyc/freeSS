@@ -13,14 +13,16 @@ var SList = options.server_list;
 var __flag = SList.length;
 
 var writeConfigFile = function(){
-    if(__flag === 0){
+    if(__flag === 1){
         __config.configs = configs;
-        config = JSON.stringify(config);
+        config = JSON.stringify(__config);
 
+        console.log(configs);
         fs.writeFileSync(config_file, config, 'utf8');
         console.log("Config Updated!");
     }
     else{
+        __flag--;
         console.log("Task Remained: " + __flag);
     }
 }
@@ -28,10 +30,10 @@ var writeConfigFile = function(){
 SList.forEach(function(website){
     switch(website.method){
         case "jsdom":
-            method.jsdom.process(website, configs, writeConfigFile);
+            __method.jsdom.process(website, configs, writeConfigFile);
         break;
         case "self":
-            method.users.process(website.url, configs, writeConfigFile);
+            __method.users.process(website.url, configs, writeConfigFile);
         break;
         default:
         break;
