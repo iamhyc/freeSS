@@ -19,4 +19,4 @@ Free server configuration now only with '**ishadowsocks.com**'.
 
 ##Additions
 
-1. Your own server configuration should be written in the config file at the root of the directory in **json** format(reffering **users.json**), and remember to suuit the file name in **freeSS.json**.
+1. Your own server configuration should be written in the config file at the root of the directory in **json** format(reffering **users.json**), and remember to suit the file name in **freeSS.json**.
