@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 	output: process.stdout
 });
 
-var config = '@echo off\nnode ' + path.join(process.cwd(), 'app.js')+'\necho,\necho "Process Restart..."\ntskill shadowsocks\nstart '+ path.join(process.env.HOMEPATH ,'Shadowsocks.exe')+'\necho,\necho "Successfull!"\nexit';
+var config = '@echo off\r\nnode ' + path.join(process.cwd(), 'app.js')+'\r\necho,\r\necho "Process Restart..."\r\ntskill shadowsocks\r\nstart '+ path.join(process.env.HOMEPATH ,'Shadowsocks.exe')+'\r\necho,\r\necho "Successfull!"\r\nexit';
 
 fs.writeFile('Timeup.bat', config, 'utf8', function(err){
 	if(err){
