@@ -1,10 +1,8 @@
-Based on shadowsocks gui on Windows, and node.js library jsdom.
+# Project freeSS
 
-Free server configuration now only with '**ishadowsocks.com**'.
+first version completed in hotel; next for free SSR parse, with **Regex** and **Ajax**.
 
-**Nodejs** environment required.**Windows** environment required.
-
-##Steps
+### Steps
 0. **git clone** this repository or **download and unzip** it
 
 1.  download the shadowsock-gui(qt) version, and move it to your HOME directory
@@ -17,6 +15,6 @@ Free server configuration now only with '**ishadowsocks.com**'.
 
 [Recomended: Enable the "**Load Balancing**" Mode]
 
-##Additions
+### Additions
 
 1. Your own server configuration should be written in the config file at the root of the directory in **json** format(reffering **users.json**), and remember to suit the file name in **freeSS.json**.
